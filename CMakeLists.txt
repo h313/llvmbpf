@@ -71,9 +71,7 @@ endif()
 
 include(FetchContent)
 
-if(DEFINED USE_SYSTEM_SPDLOG)
-    find_package(spdlog CONFIG REQUIRED)
-elif(NOT DEFINED SPDLOG_INCLUDE)
+if(NOT DEFINED SPDLOG_INCLUDE)
     message(INFO " Adding spdlog seperately..")
 
     # spdlog
